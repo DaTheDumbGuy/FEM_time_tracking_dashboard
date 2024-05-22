@@ -1,17 +1,11 @@
-import { useState, useEffect } from "react";
-import { fetchData } from "./services/api";
+import TimeTrackingDashboard from "./components/TimeTrackingDashboard";
 
 export default function App() {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    fetchData()
-      .then((data) => {
-        setData(data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
-  console.log(data);
-  return <>App</>;
+  return (
+    <>
+      <main>
+        <TimeTrackingDashboard />
+      </main>
+    </>
+  );
 }
