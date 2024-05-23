@@ -1,4 +1,4 @@
-import profile from "../../public/images/image-jeremy.png";
+import profile from "/images/image-jeremy.png";
 import Button from "./Button";
 export default function User({ setTimeframe }) {
   return (

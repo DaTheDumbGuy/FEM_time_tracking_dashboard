@@ -1,5 +1,5 @@
 import Category from "./Category";
-import ellipsis from "../../public/images/icon-ellipsis.svg";
+import ellipsis from "/images/icon-ellipsis.svg";
 
 export default function Timeframes({ timeframe, item }) {
   const timeframeMap = {
