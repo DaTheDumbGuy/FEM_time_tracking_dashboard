@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchData } from "../services/api";
 import Timeframes from "./Timeframes";
 import User from "./User";
+import "./timeTrackingDashboard.scss";
 
 export default function TimeTrackingDashboard() {
   const [data, setData] = useState({});
@@ -22,9 +23,9 @@ export default function TimeTrackingDashboard() {
 
   console.log(timeframe);
   return (
-    <article>
-      <User setTimeframe={setTimeframe} />
-      <ul>
+    <article className="time_tracking_dashboard">
+      <User setTimeframe={setTimeframe} timeframe={timeframe} />
+      <ul className="timeframes_container">
         {isLoading
           ? "Loading..."
           : data.map((item) => (
