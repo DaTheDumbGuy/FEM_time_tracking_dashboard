@@ -1,0 +1,12 @@
+@use '../scss/base/index' as b;
+
+.timeframeBTN{
+    border:none;
+    background:transparent;
+    color:hsl(235, 45%, 61%);   
+    font-weight: b.$fw_thicc;
+    
+    &.active{
+        color:white;
+    }
+}

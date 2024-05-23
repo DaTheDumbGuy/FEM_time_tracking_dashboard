@@ -1,0 +1,31 @@
+@use '../scss/base/index' as b;
+.category{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 20px 20px 20px;
+    
+    p:first-child{
+        font-size:1.5em;
+    }
+    p:last-child{
+        font-size:0.7em;
+        color: b.$c_primary;
+    }
+}
+@media (min-width:768px) {
+    .category{
+        flex-direction: column;
+        align-items: flex-start;
+        gap:5x;
+        padding-top:10px;
+        p:first-child{
+            font-size:2em;
+        }
+        p:last-child{
+            font-size:0.7em;
+            color: b.$c_primary;
+        }
+    }
+
+}
